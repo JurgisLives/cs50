@@ -1,0 +1,32 @@
+/*CSS Rules for harvard_dce.html*/
+
+body{
+background-color:#C0C0C0;
+font-family: Verdana, Geneva, sans-serif;
+font-size: 14px;
+color: black;
+}
+
+h1{
+color:#780000;
+ text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+}
+
+h2{
+    color:#700000;
+ text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+}
+
+p{
+border-color: black;
+border= 4px;
+background-color= white;
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<title> Dado Order Form</title>
+
+<form method="post" action="http://cscis12.dce.harvard.edu/echo" enctype="application/x-www-form-urlencoded">
+</head>
+    <h2>Dado Lunch Special $7.24</h2>
+	<p>Mon-Fri.</br>11am-3pm</br></p>
+<fieldset><legend>Name:</legend>
+<input type="text" name="name"/>
+<br/>
+<div><input type="radio" name="heretogo" value="here" checked="checked"/>/Here
+<br/>
+<input type="radio" name="heretogo" value="togo"/>/To Go
+<br/>
+</fieldset>
+<fieldset id="sandwich"><legend>Sandwiches, Choose one:</legend>
+<h4>Monday</h4><input type="radio" name="sandwich" value="Pesto_tofu" checked="checked"/>Pesto Tofu Salad </br> <input type="radio" name="sandwich" value="Chix_salad">Chicken Salad
+<br/>
+<h4>Tuesday</h4> <input type="radio" name="sandwich" value="Greek_Wrap" checked="checked"/>Greek Salad Wrap </br> <input type="radio" name="sandwich" value="Tuna">Tuna Salad
+<br/>
+<h4>Wednesday</h4><input type="radio" name="sandwich" value="hummus" checked="checked"/>Hummus </br> <input type="radio" name="sandwich" value="Turkey">Turkey
+<br/>
+<h4>Thursday</h4><input type="radio" name="sandwich" value="Carrot_Ging" checked="checked"/>Carrot Ginger Wrap </br> <input type="radio" name="sandwich" value="Egg_salad">Egg Salad
+<br/>
+<h4>Friday</h4> <input type="radio" name="sandwich" value="Veggie" checked="checked"/>Veggie </br> <input type="radio" name="sandwich" value="Tuna">Tuna Salad
+</fieldset>
+<br/>
+<fieldset id="Bread">
+<legend>Bread, Choose 1:  </legend>
+<input type="radio" name="bread" value="7_grain" checked="checked"/>/7 Grain, xxxxx
+<br/>
+<input type="radio" name="bread" value="french">French, xxxxx
+<br/>
+<input type="radio" name="bread" value="wrap">Wheat Wrap, xxxxx
+<br/>
+</fieldset>
+<fieldset id="cheese">
+<legend>Cheese, add $0.50  <legend>
+<input type="checkbox" name="cheese" value="none" checked="checked"/>None
+<br/>
+<input type="checkbox" name="cheese" value="feta"/>Feta
+<br/>
+<input type="checkbox" name="cheese" value="mozz"/>Fresh Mozzarella
+<br/>
+<input type="checkbox" name="cheese" value="swiss"/>Swiss
+<br/>
+</fieldset>
+<fieldset id="spread">
+<legend>Spreads, choose any/ all</legend>
+<input type="checkbox" name="spread" value="none" checked="checked"/>None
+<br/>
+<input type="checkbox" name="spread" value="mayo"/>Mayo
+<br/>
+<input type="checkbox" name="spread" value="h_must"/>Honey Mustard
+<br/>
+<input type="checkbox" name="spread" value="pesto"/>Pesto
+<br/>
+<input type="checkbox" name="spread" value="olive"/>Olive
+</fieldset>
+<br/>
+<fieldset id="filling">
+<legend>Fillings, any/all</legend>
+<input type="checkbox" name="filling" value="none" checked="checked"/>None
+<br/>
+<input type="checkbox" name="filling" value="tomato"/>Tomato
+<br/>
+<input type="checkbox" name="filling" value="lettuce"/>Mixed Greens
+<br/>
+<input type="checkbox" name="filling" value="onion"/> Red Onion
+<br/>
+<input type="checkbox" name="filling" value="cucumber"/>Cucumber
+</fieldset>
+<br/>
+<fieldset id="snacks">
+<legend>Snacks, choose one:</legend>
+<input type="radio" name="snack" value="apple" checked="checked"/>Apple
+<br/>
+<input type="radio" name="snack" value="banana">Banana
+<br/>
+<input type="radio" name="snack" value="chips">Chips
+<br/>
+</fieldset>
+<fieldset id="drinks">
+<legend>Drinks, choose one:</legend>
+<select name="drink">
+<optgroup label="Hot Coffee">
+<option value="H_coffee"/>Hot Coffee 
+<br/>
+<option value="H_coffee_decaf">Decaf Hot Coffee 
+<br/>
+<optgroup label="Iced Coffee">
+<option value="Ice_Coffee"/>Ice Coffee 
+<br/>
+<option value="Iced_coffee_decaf">Decaf Iced Coffee 
+<br/>
+<optgroup label="Hot Green Tea">
+<option value="sencha"/>Sencha
+<br/>
+<option value="D_sencha">Decaf Green 
+<br/>
+<optgroup label="Iced Green Tea">
+<option value="iced_sencha"/>Sencha 
+<br/>
+<option value="iced_D_sencha">Decaf Green 
+<br/>
+<optgroup label="Hot Black Tea">
+<option value="keemun"/>Keemun 
+<br/>
+<option value="D_keemun">Decaf Keemun
+<br/>
+<optgroup label="Iced Black Tea">
+<option value="Iced_keemun"/>Keemun 
+<br/>
+<option value="Iced_D_keemun">Decaf Keemun 
+<input type="checkbox" name="large" label="large_y" value="yes">Large
+</fieldset>
+<br/>
+<input type="submit" name="action" value="Place Order"/></div> <br/>
+</form>
+<p>No Substitutions</p>

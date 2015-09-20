@@ -1,0 +1,75 @@
+/**
+ * ReadSHT1xValues
+ *
+ * Read temperature and humidity values from an SHT1x-series (SHT10,
+ * SHT11, SHT15) sensor.
+ *
+ * Copyright 2009 Jonathan Oxer <jon@oxer.com.au>
+ * www.practicalarduino.com
+ */
+
+#include <SHT1x.h>
+
+// Specify data and clock connections and instantiate SHT1x object
+#define dataPin  10
+#define clockPin 11
+#define fan_pin 13
+
+SHT1x sht1x(dataPin, clockPin);
+
+
+
+void setup()
+{
+  pinMode(fan_pin, OUTPUT);
+   Serial.begin(38400); // Open serial connection to report values to host
+   Serial.println("Starting up");
+}
+
+void loop()
+{
+  float temp_c;
+  float temp_f;
+  float humidity;
+
+  float temp_max;
+  float temp_min;
+  
+  float hum_max;
+  float hum_min;
+  
+  
+  
+  // Read values from the sensor
+  temp_c = sht1x.readTemperatureC();
+  temp_f = sht1x.readTemperatureF();
+  humidity = sht1x.readHumidity();
+
+  //set up the max and min constants
+  temp_max = 90.0;
+  temp_min = 70.0;
+  //fff
+  hum_max = 95.0;
+  hum_min = 70.0;
+  
+  // Print the values to the serial port
+  Serial.print("Temperature: ");
+  Serial.print(temp_c, DEC);
+  Serial.print("C / ");
+  Serial.print(temp_f, DEC);
+  Serial.print("F. Humidity: ");
+  Serial.print(humidity);
+  Serial.println("%");
+
+  delay(2000);
+
+//set the fan pin to HIGH if temp or hum are too high
+
+if ((temp_f >= temp_max) || (humidity >= hum_max))
+  {
+   digitalWrite (fan_pin, HIGH); 
+   delay 5000;
+  }
+else (digitalWrite (fan_pin, LOW);
+ 
+}
